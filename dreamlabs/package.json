@@ -33,9 +33,12 @@
     ]
   },
   "devDependencies": {
+    "@types/node-sass": "^4.11.8",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.4.2"
+    "node-sass": "^7.0.3",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.0"
   }
 }
