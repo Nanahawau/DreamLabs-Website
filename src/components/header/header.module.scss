@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+
+  .logo_container {
+    border: 1px solid red;
+    max-width: 96px;
+
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .navlist {
+    border: 1px solid red;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+    li {
+      list-style: none;
+      color: #ffffff;
+      line-height: 0.8325rem;
+      font-size: 0.75rem;
+    }
+  }
+}
