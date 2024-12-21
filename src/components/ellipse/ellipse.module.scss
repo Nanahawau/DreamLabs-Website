@@ -1,0 +1,21 @@
+.container {
+  border: 1px solid #efcdff;
+  display: inline-block;
+  color: #efcdff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 176px;
+  .dot {
+    border: 1px solid #efcdff;
+    display: inline-block;
+    color: #efcdff;
+    background: #efcdff;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+}

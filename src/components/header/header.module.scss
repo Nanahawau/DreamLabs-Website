@@ -1,10 +1,8 @@
 .container {
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
 
   .logo_container {
-    border: 1px solid red;
     max-width: 96px;
 
     .logo {
@@ -14,7 +12,7 @@
   }
 
   .navlist {
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     gap: 35px;
     align-items: center;
