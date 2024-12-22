@@ -3,6 +3,7 @@ import Header from '../../components/header/Header';
 import styles from './home.module.scss';
 import Hero from '../../components/hero/Hero';
 import Elllipse from '../../components/ellipse/Elllipse';
+import Carousel from '../../components/slider/Carousel';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Elllipse />
+      <Carousel />
     </div>
   );
 };
