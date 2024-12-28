@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo_container}>
-        <img src="./images/dreamlabs.png" alt="dreamlabs_logo" className={styles.logo} />
+        <img src="./images/3.png" alt="dreamlabs_logo" className={styles.logo} />
       </div>
 
       <ul className={styles.navlist}>

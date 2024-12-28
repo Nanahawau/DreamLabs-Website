@@ -1,6 +1,8 @@
 .carousel_container {
   //   width: 80%;
-  margin: 289px 0px auto;
+  margin: 120px 0px 220px;
+  padding-left: 41px;
+  padding-right: 41px;
 }
 
 .carousel_item {
@@ -9,6 +11,9 @@
   justify-content: center;
   align-items: center;
   gap: 62px;
+}
+.carousel_item:hover {
+  // transform: scale(1.1);
 }
 
 .carousel_item img {

@@ -4,6 +4,8 @@ import styles from './home.module.scss';
 import Hero from '../../components/hero/Hero';
 import Elllipse from '../../components/ellipse/Elllipse';
 import Carousel from '../../components/slider/Carousel';
+import Footer from '../../components/footer/Footer';
+import Divider from '../../components/divider/Divider';
 
 const Home = () => {
   return (
@@ -11,7 +13,10 @@ const Home = () => {
       <Header />
       <Hero />
       <Elllipse />
+      <Divider />
       <Carousel />
+      <Divider />
+      <Footer />
     </div>
   );
 };
