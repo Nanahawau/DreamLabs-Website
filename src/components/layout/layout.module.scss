@@ -1,0 +1,82 @@
+.container {
+  border: 1px solid red;
+  background-color: #050a2f;
+  padding-left: 41px;
+  padding-right: 41px;
+  min-height: 100vh;
+
+  .header {
+    border: 1px solid red;
+    padding-top: 181px;
+    color: #ffffff;
+
+    .title {
+      font-weight: 510;
+      line-height: 5.375rem;
+      font-size: 4rem;
+    }
+
+    .sub_title {
+      font-size: 1rem;
+      font-weight: 510;
+      line-height: 1.34rem;
+    }
+  }
+
+  .main_content {
+    margin-top: 71px;
+
+    .img_container {
+      border: 1px solid green;
+      //   max-width: 1384px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .description {
+      border: 1px solid yellow;
+      background: #e3e7ff;
+      //   display: flex;
+      padding-left: 136px;
+      padding-right: 136px;
+      padding-bottom: 41px;
+      padding-top: 80px;
+      border-radius: 40px;
+
+      .description_text {
+        display: flex;
+        justify-content: space-between;
+        .main {
+          font-family: Instrument Serif;
+          font-size: 3.75rem;
+          font-weight: 400;
+          line-height: 4.46rem;
+          border: 1px solid green;
+        }
+
+        .sub {
+          font-family: SF Pro;
+          font-size: 1.375rem;
+          font-weight: 400;
+          line-height: 1.84rem;
+          border: 1px solid red;
+        }
+      }
+
+      .media {
+      }
+    }
+
+    .media {
+      border: 1px solid green;
+      max-width: 1167px;
+      //   margin-left: 136px;
+      //   margin-right: 136px;
+      display: flex;
+      gap: 29px;
+    }
+  }
+}

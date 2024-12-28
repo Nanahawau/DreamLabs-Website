@@ -1,6 +1,9 @@
 .container {
   display: flex;
   justify-content: space-between;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 21px;
 
   .logo_container {
     max-width: 96px;
@@ -12,7 +15,6 @@
   }
 
   .navlist {
-    // border: 1px solid red;
     display: flex;
     gap: 35px;
     align-items: center;

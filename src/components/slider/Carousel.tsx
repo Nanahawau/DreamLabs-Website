@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styles from './carousel.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Carousel = () => {
   const settings = {
@@ -37,19 +38,28 @@ const Carousel = () => {
     ]
   };
 
-  const images = [
-    '/images/hertitude.svg',
-    '/images/celeste.svg',
-    '/images/mavin.svg',
-    '/images/chefroz.svg',
-    '/images/evoz.svg'
+  const carouselItems = [
+    { id: '1', image: '/images/hertitude.svg' },
+    { id: '2', image: '/images/celeste.svg' },
+    { id: '3', image: '/images/mavin.svg' },
+    { id: '4', image: '/images/chefroz.svg' },
+    { id: '5', image: '/images/evoz.svg' }
   ];
+
+  const navigate = useNavigate();
+
+  const handleItemClick = (id: string) => {
+    navigate(`/page/${id}`);
+  };
   return (
     <div className={styles.carousel_container}>
       <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className={styles.carousel_item}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+        {carouselItems.map((item, index) => (
+          <div
+            key={item.id}
+            className={styles.carousel_item}
+            onClick={() => handleItemClick(item.id)}>
+            <img src={item.image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </Slider>
