@@ -1,0 +1,19 @@
+.container {
+  background: #050a2f;
+  display: flex;
+  flex-direction: column;
+
+
+  .sunglasses_img {
+    border: 1px solid red;
+    text-align: center;
+  
+
+    img{
+      width: 642px;
+      border: 1px solid green;
+      height: auto;
+    }
+
+  }
+}
