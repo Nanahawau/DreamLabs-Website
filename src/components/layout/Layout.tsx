@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './layout.module.scss';
 import { useParams } from 'react-router-dom';
-import Header from '../header/Header';
 
 const pageData: Record<
   string,
