@@ -5,7 +5,7 @@ type SingleDescriptionBanner = {
   heroImg: string;
   subText: string;
   imgOne: string;
-  imgTwo: string;
+  imgTwo?: string;
 };
 const SingleDescriptionBanner = ({ heroImg, subText, imgOne, imgTwo }: SingleDescriptionBanner) => {
   return (

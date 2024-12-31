@@ -10,12 +10,12 @@ const Gallery = ({ topImgOne, topImgTwo, bottomImg }: GalleryProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.top_section}>
-        <img src={topImgOne} alt="" />
-        <img src={topImgTwo} alt="" />
+        <img src={topImgOne} alt="image" />
+        <img src={topImgTwo} alt="image" />
       </div>
 
       <div className={styles.bottom_section}>
-        <img src={bottomImg} alt="" />
+        <img src={bottomImg} alt="image" />
       </div>
     </div>
   );

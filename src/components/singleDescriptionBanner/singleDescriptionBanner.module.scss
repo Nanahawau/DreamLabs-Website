@@ -1,8 +1,11 @@
 .container {
   border: 1px solid green;
+  padding-left: 41px;
+  padding-right: 41px;
+  border-bottom: 40px;
 
   .img_container {
-    border: 1px solid red;
+    // border: 1px solid red;
     max-width: 100%;
 
     img {
@@ -13,25 +16,28 @@
 
   .content {
     background: #e3e7ff;
-    border: 1px solid red;
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
     padding-left: 135px;
+    padding-top: 100px;
     border-bottom: 40px;
 
     .text_content {
       display: flex;
       padding-bottom: 80px;
+      //   max-width: 449px;
+      justify-content: flex-end;
 
       .sub {
-        border: 1px solid green;
-        display: flex;
-        justify-content: flex-end;
+        // display: flex;
+        margin-right: 201px;
         font-family: SF Pro;
         font-size: 22px;
         font-weight: 400;
         line-height: 29.48px;
+        max-width: 449px;
+        border: 1px solid green;
       }
     }
 
@@ -39,6 +45,9 @@
       border: 1px solid red;
       display: flex;
       gap: 29px;
+      margin-top: 172px;
+      max-width: 1170px;
+      flex-wrap: wrap;
     }
   }
 }
