@@ -22,8 +22,12 @@ const TopBanner = ({ heroImg, mainText, subText, imgOne, imgTwo }: TopBannerProp
         </div>
 
         <div className={styles.img_content}>
-          <img src={imgOne} alt="image" />
-          <img src={imgTwo} alt="image" />
+          <div className={styles.img_container}>
+            <img src={imgOne} alt="image" />
+          </div>
+          <div className={styles.img_container}>
+            <img src={imgTwo} alt="image" />
+          </div>
         </div>
       </div>
     </div>

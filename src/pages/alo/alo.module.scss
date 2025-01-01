@@ -1,0 +1,15 @@
+.container {
+  background: #050a2f;
+  display: flex;
+  flex-direction: column;
+
+  .alo_frame {
+    margin: 150px auto;
+
+    img {
+      height: auto;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+}

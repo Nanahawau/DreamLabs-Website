@@ -1,25 +1,41 @@
 .container {
-//   border: 1px solid red;
   background: #e3e7ff;
   margin-left: 41px;
   margin-right: 41px;
   border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+
   .top_section {
     display: flex;
     padding-top: 136px;
     padding-left: 136px;
     padding-bottom: 60px;
-    max-width: 1200px;
+    // max-width: 1200px;
+    width: 100%;
     gap: 29px;
+
+    .img_container {
+      width: 780px;
+
+      img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+        // border: 1px solid red;
+
+      }
+    }
   }
 
   .bottom_section {
-    max-width: 1200px;
+    margin-right:100px;
     margin-left: 136px;
     margin-bottom: 126px;
 
     img {
       width: 100%;
+      height: auto;
     }
   }
 }

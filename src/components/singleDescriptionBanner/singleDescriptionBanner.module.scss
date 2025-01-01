@@ -1,8 +1,8 @@
 .container {
   border: 1px solid green;
-  padding-left: 41px;
-  padding-right: 41px;
-  border-bottom: 40px;
+  margin-left: 41px;
+  margin-right: 41px;
+  border-radius: 40px;
 
   .img_container {
     // border: 1px solid red;
@@ -11,17 +11,18 @@
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 
   .content {
     background: #e3e7ff;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     padding-left: 135px;
     padding-top: 100px;
-    border-bottom: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 
     .text_content {
       display: flex;
@@ -42,12 +43,19 @@
     }
 
     .img_content {
-      border: 1px solid red;
       display: flex;
       gap: 29px;
-      margin-top: 172px;
-      max-width: 1170px;
-      flex-wrap: wrap;
+
+      .img_container {
+        width: 780px;
+
+        img {
+          height: auto;
+          object-fit: cover;
+          max-width: 100%;
+          border: 1px solid red;
+        }
+      }
     }
   }
 }

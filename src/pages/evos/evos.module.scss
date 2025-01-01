@@ -1,0 +1,23 @@
+.container {
+  background: #050a2f;
+  display: flex;
+  flex-direction: column;
+
+  .evos_cards{
+    border: 1px solid red;
+    display: flex;
+    max-width: 1154px;
+    margin:0 auto;
+    gap: 28px;
+   .img_container {
+
+        img {
+          height: auto;
+          object-fit: cover;
+          max-width: 100%;
+        }
+      } 
+
+
+  }
+}

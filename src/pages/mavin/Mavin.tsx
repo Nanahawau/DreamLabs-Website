@@ -21,13 +21,17 @@ const Mavin = () => {
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />
       <SingleDescriptionBanner
-        heroImg="/images/mavin_cap.svg"
+        heroImg="/images/mavin_double.svg"
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
-        imgOne="/images/hertitude_logo.svg"
+        imgOne="/images/mavin_cap.svg"
       />
       <div className={styles.logo_container}>
-        <img src="images/mavin_page_logo.svg" alt="mavin_logo" />
-        <img src="images/mavin_brand_name.svg" alt="brand_name" />
+        <div className={styles.img_container}>
+          <img src="images/mavin_page_logo.svg" alt="mavin_logo" />
+        </div>
+        <div className={styles.img_container}>
+          <img src="images/mavin-brand_name.svg" alt="brand_name" />
+        </div>
       </div>
       <Footer />
     </div>
