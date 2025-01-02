@@ -39,17 +39,17 @@ const Carousel = () => {
   };
 
   const carouselItems = [
-    { id: '1', image: '/images/hertitude.svg' },
-    { id: '2', image: '/images/celeste.svg' },
-    { id: '3', image: '/images/mavin.svg' },
-    { id: '4', image: '/images/chefroz.svg' },
-    { id: '5', image: '/images/evoz.svg' }
+    { id: 'hertitude', image: '/images/hertitude.svg' },
+    { id: 'alo', image: '/images/celeste.svg' },
+    { id: 'mavin', image: '/images/mavin.svg' },
+    { id: 'chez-ro', image: '/images/chefroz.svg' },
+    { id: 'evos', image: '/images/evoz.svg' }
   ];
 
   const navigate = useNavigate();
 
   const handleItemClick = (id: string) => {
-    navigate(`/page/${id}`);
+    navigate(`/${id}`);
   };
   return (
     <div className={styles.carousel_container}>

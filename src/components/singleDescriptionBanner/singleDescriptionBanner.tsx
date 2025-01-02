@@ -5,23 +5,51 @@ type SingleDescriptionBanner = {
   heroImg: string;
   subText: string;
   imgOne: string;
-  imgTwo: string;
+  imgTwo?: string;
+  pageName: string;
 };
-const SingleDescriptionBanner = ({ heroImg, subText, imgOne, imgTwo }: SingleDescriptionBanner) => {
+
+type PageName = 'hertitude' | 'alo' | 'mavin' | 'chezro' | 'evos';
+
+const SingleDescriptionBanner = ({
+  heroImg,
+  subText,
+  imgOne,
+  imgTwo,
+  pageName
+}: SingleDescriptionBanner) => {
+  const pageStyles: Record<PageName | 'default', { backgroundColor: string }> = {
+    hertitude: { backgroundColor: '#E3E7FF' },
+    alo: { backgroundColor: '#E2D4FF' },
+    mavin: { backgroundColor: '#F6D7C5' },
+    chezro: { backgroundColor: '#FFF8E3' },
+    evos: { backgroundColor: '#DFF9FF' },
+    default: { backgroundColor: '#E3E7FF' }
+  };
+  const isPageName = (key: string): key is PageName => {
+    return ['hertitude', 'alo', 'mavin', 'chezro', 'evos'].includes(key);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.img_container}>
         <img src={heroImg} alt="image" />
       </div>
 
-      <div className={styles.content}>
+      <div
+        className={styles.content}
+        style={isPageName(pageName) ? pageStyles[pageName] : pageStyles.default}>
         <div className={styles.text_content}>
           <p className={styles.sub}>{subText} </p>
         </div>
 
         <div className={styles.img_content}>
-          <img src={imgOne} alt="image" />
-          <img src={imgTwo} alt="image" />
+          <div className={styles.img_container}>
+            <img src={imgOne} alt="image" />
+          </div>
+          <div className={styles.img_container}>
+            <img src={imgTwo} alt="image" />
+          </div>
         </div>
       </div>
     </div>

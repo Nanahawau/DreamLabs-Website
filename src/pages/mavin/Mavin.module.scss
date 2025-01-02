@@ -1,0 +1,22 @@
+.container {
+  background: #050a2f;
+  display: flex;
+  flex-direction: column;
+
+  .logo_container {
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img_container {
+      
+      img {
+        height: auto;
+        object-fit: cover;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -11,12 +11,19 @@
   justify-content: center;
   align-items: center;
   gap: 62px;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  transform-origin: center;
 }
 .carousel_item:hover {
-  // transform: scale(1.1);
+  transform: scale(1.1); /* Scale the item smoothly on hover */
+    z-index: 2; /* Bring the hovered item to the front */
+
 }
 
 .carousel_item img {
   width: 100%;
   border-radius: 8px;
 }
+

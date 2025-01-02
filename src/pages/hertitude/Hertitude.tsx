@@ -19,13 +19,15 @@ const Hertitude = () => {
         subText="The team designed an identity that calls back to the energies of a good day: hopeful sunrise, electric noon and a romantic evening. Making sure not to miss out on pop culture references, the illustration style stood out amongst a sea of the expected."
         imgOne="/images/hertitude_logo.svg"
         imgTwo="/images/puwb.svg"
+        pageName="hertitude"
       />
       <Mission text="Brand identity for the third edition of Zikoko HER’s annual party" />
       <SingleDescriptionBanner
-        heroImg="/images/for_hot_babes.svg"
+        heroImg="/images/group.svg"
         subText="The team designed an identity that calls back to the energies of a good day: hopeful sunrise, electric noon and a romantic evening. Making sure not to miss out on pop culture references, the illustration style stood out amongst a sea of the expected."
         imgOne="/images/hertitude_logo.svg"
         imgTwo="/images/puwb.svg"
+        pageName="hertitude"
       />
       <div className={styles.sunglasses_img}>
         <img src="images/sunglasses.svg" alt="image" />
@@ -34,6 +36,7 @@ const Hertitude = () => {
         topImgOne="/images/hertitude_imgone.svg"
         topImgTwo="/images/hertitude_imgtwo.svg"
         bottomImg="/images/hertitude_btm.svg"
+        pageName="hertitude"
       />
       <Footer />
     </div>
