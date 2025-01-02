@@ -7,6 +7,7 @@ import SingleDescriptionBanner from '../../components/singleDescriptionBanner/si
 import Title from '../../components/title/Title';
 import TopBanner from '../../components/topBanner/TopBanner';
 import Footer from '../../components/footer/Footer';
+import DoubleDescSingleImg from '../../components/doubledescsingleimg/DoubleDescSingleImg';
 
 const ChezRo = () => {
   return (
@@ -19,6 +20,7 @@ const ChezRo = () => {
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/chezro_brown_box.svg"
         imgTwo="/images/chezro_black_box.svg"
+        pageName="chezro"
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />
       <SingleDescriptionBanner
@@ -26,6 +28,7 @@ const ChezRo = () => {
         subText="The team designed an identity that calls back to the energies of a good day: hopeful sunrise, electric noon and a romantic evening. Making sure not to miss out on pop culture references, the illustration style stood out amongst a sea of the expected."
         imgOne="/images/reimagined1.svg"
         imgTwo="/images/reimagined2.svg"
+        pageName="chezro"
       />
       <div className={styles.img_container}>
         <img src="/images/chezropotrait.svg" alt="image" />
@@ -34,6 +37,14 @@ const ChezRo = () => {
         topImgOne="/images/Chezro_cards_1.svg"
         topImgTwo="/images/chezrocards2.svg"
         bottomImg="/images/chezro_ig.svg"
+        pageName="chezro"
+      />
+      <DoubleDescSingleImg
+        heroImg="/images/joos.svg"
+        mainText="For hot babes, by hot babes"
+        subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
+        imgOne="/images/chezro_drinks.svg"
+        pageName="chezro"
       />
       <Footer />
     </div>

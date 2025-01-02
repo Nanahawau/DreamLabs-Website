@@ -19,6 +19,7 @@ const Alo = () => {
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/alo_cover.svg"
         imgTwo="/images/alo_track.svg"
+        pageName="alo"
       />
       <Mission text="Brand identity for the third edition of Zikoko HER’s annual party" />
       <SingleDescriptionBanner
@@ -26,12 +27,14 @@ const Alo = () => {
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/image.svg"
         imgTwo="/images/image_80.svg"
+        pageName="alo"
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />
       <Gallery
         topImgOne="/images/alo_gallthree.svg"
         topImgTwo="/images/alogalltwo.svg"
         bottomImg="/images/alo_gallOne.svg"
+        pageName="alo"
       />
       <div className={styles.alo_frame}>
         <img src="/images/alo_framed.svg" alt="alo_framed" />

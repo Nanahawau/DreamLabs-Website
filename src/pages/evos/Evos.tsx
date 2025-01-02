@@ -18,6 +18,7 @@ const Evos = () => {
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/evos.svg"
         imgTwo="/images/hoodie.svg"
+        pageName="evos"
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />
       <TopBanner
@@ -26,6 +27,7 @@ const Evos = () => {
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/empea_cup.svg"
         imgTwo="/images/empea_cap.svg"
+        pageName="evos"
       />
       <div className={styles.evos_cards}>
         <div className={styles.img_container}>
@@ -39,6 +41,7 @@ const Evos = () => {
         topImgOne="/images/business_card.svg"
         topImgTwo="/images/empea_gallery.svg"
         bottomImg="/images/evos_p.svg"
+        pageName="evos"
       />
       <Footer />
     </div>

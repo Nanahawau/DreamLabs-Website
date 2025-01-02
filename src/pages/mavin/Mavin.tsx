@@ -4,8 +4,8 @@ import Header from '../../components/header/Header';
 import Title from '../../components/title/Title';
 import TopBanner from '../../components/topBanner/TopBanner';
 import Mission from '../../components/mission/Mission';
-import SingleDescriptionBanner from '../../components/singleDescriptionBanner/singleDescriptionBanner';
 import Footer from '../../components/footer/Footer';
+import SingeDescSingleImgBanner from '../../components/singledescsingleimg/SingleDescSingleImgBanner';
 
 const Mavin = () => {
   return (
@@ -18,9 +18,10 @@ const Mavin = () => {
         subText="The result of a close collaboration between the ambitious people at Mavin and the Dream Labs team, Mavin’s 10th year official logo is self-assured. It hasn’t been easy after all, though we’ve made it seem so."
         imgOne="/images/mavin_cup.svg"
         imgTwo="/images/mavin_at_10.svg"
+        pageName="mavin"
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />
-      <SingleDescriptionBanner
+      <SingeDescSingleImgBanner
         heroImg="/images/mavin_double.svg"
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/mavin_cap.svg"

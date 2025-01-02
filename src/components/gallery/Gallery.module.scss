@@ -23,19 +23,19 @@
         object-fit: cover;
         width: 100%;
         // border: 1px solid red;
-
       }
     }
   }
 
   .bottom_section {
-    margin-right:100px;
+    margin-right: 100px;
     margin-left: 136px;
     margin-bottom: 126px;
 
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 }

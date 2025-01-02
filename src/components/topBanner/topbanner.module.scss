@@ -15,7 +15,7 @@
   }
 
   .content {
-    background: #e3e7ff;
+    // background: #e3e7ff;
     display: flex;
     flex-direction: column;
     padding-top: 182px;
@@ -33,6 +33,7 @@
       display: flex;
       padding-bottom: 80px;
       gap: 734px;
+      flex-wrap: wrap;
 
       @media (max-width: 780px) {
         gap: 29px;
