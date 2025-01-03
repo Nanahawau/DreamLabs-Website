@@ -38,6 +38,11 @@
         font-weight: 400;
         line-height: 29.48px;
         max-width: 449px;
+
+        @media (max-width: 860px) {
+          justify-content: flex-start;
+          margin: 0 auto;
+        }
       }
     }
 
