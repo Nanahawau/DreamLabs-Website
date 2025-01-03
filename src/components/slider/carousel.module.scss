@@ -1,29 +1,46 @@
 .carousel_container {
   //   width: 80%;
-  margin: 120px 0px 220px;
-  padding-left: 41px;
-  padding-right: 41px;
-}
-
-.carousel_item {
-  padding: 10px;
+  // margin: 100px 0px 220px;
+  // padding-left: 41px;
+  // padding-right: 41px;
+  margin-left: 41px;
+  margin-right: 41px;
+  margin-top: 100px;
+  margin-bottom: 220px;
+  // border: 1px solid red;
+  // width: 80%;
   display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  gap: 62px;
-  transition:
-    transform 0.5s ease,
-    box-shadow 0.5s ease;
-  transform-origin: center;
 }
+
+// .carousel_item {
+//   // display: flex;
+//   // gap: 62px;
+//   // transition: transform 0.5s ease;
+//   // box-shadow 0.5s ease;
+//   // transform-origin: center;
+//   z-index: 10;
+// }
+// .carousel_item:hover {
+//   // transform: scale(1.5);
+//   z-index: 20;
+// }
+
+// .carousel_item img {
+//   width: 100%;
+//   border-radius: 8px;
+// }
+
+.carousel_item {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  // width: 100%;
+}
+
 .carousel_item:hover {
-  transform: scale(1.1); /* Scale the item smoothly on hover */
-    z-index: 2; /* Bring the hovered item to the front */
-
+  transform: scale(1.4);
+  // height: ;
+  // margin: 40px;
 }
-
-.carousel_item img {
-  width: 100%;
-  border-radius: 8px;
-}
-

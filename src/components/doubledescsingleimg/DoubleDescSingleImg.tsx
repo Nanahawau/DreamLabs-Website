@@ -21,7 +21,7 @@ const DoubleDescSingleImg = ({ heroImg, mainText, subText, imgOne }: DoubleDescS
         </div>
 
         <div className={styles.img_container}>
-          <img src={imgOne} alt="image" />
+          <img src={imgOne} alt="image" loading="lazy" />
         </div>
       </div>
     </div>
