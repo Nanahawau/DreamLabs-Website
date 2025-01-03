@@ -13,7 +13,7 @@ const Evos = () => {
       <Header />
       <Title title="Evos" subtitle="BRAND IDENTITY (DIGITAL MEDIA, PRINT)" />
       <TopBanner
-        heroImg="/images/for_hot_babes.svg"
+        heroImg="/images/evoz_hero.svg"
         mainText="For hot babes, by hot babes"
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/evos.svg"
