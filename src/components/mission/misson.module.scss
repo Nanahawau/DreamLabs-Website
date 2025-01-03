@@ -7,4 +7,10 @@
   line-height: 107.2px;
   max-width: 1026px;
   width: 100%;
+
+  @media (max-width: 860px) {
+    font-size: 40px;
+    line-height: 54px;
+    margin: 100px auto;
+  }
 }

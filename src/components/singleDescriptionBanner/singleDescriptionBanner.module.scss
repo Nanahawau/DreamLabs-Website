@@ -18,8 +18,9 @@
     // background: #e3e7ff;
     display: flex;
     flex-direction: column;
-    padding-left: 135px;
-    padding-top: 100px;
+
+    padding-top: 162px;
+    padding-bottom: 120px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 
@@ -43,6 +44,15 @@
     .img_content {
       display: flex;
       gap: 29px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media (max-width: 860px) {
+        align-items: center;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       .img_container {
         width: 780px;

@@ -52,14 +52,14 @@ const Carousel = () => {
     navigate(`/${id}`);
   };
   return (
-    <div className={styles.carousel_container}>
+    <div>
       <Slider {...settings}>
         {carouselItems.map((item, index) => (
           <div
             key={item.id}
-            className={styles.carousel_item}
+            className={styles.carousel_container}
             onClick={() => handleItemClick(item.id)}>
-            <img src={item.image} alt={`Slide ${index + 1}`} />
+            <img src={item.image} alt={`Slide ${index + 1}`} className={styles.carousel_item} />
           </div>
         ))}
       </Slider>

@@ -45,10 +45,10 @@ const SingleDescriptionBanner = ({
 
         <div className={styles.img_content}>
           <div className={styles.img_container}>
-            <img src={imgOne} alt="image" />
+            <img src={imgOne} alt="image" loading="lazy" />
           </div>
           <div className={styles.img_container}>
-            <img src={imgTwo} alt="image" />
+            <img src={imgTwo} alt="image" loading="lazy" />
           </div>
         </div>
       </div>

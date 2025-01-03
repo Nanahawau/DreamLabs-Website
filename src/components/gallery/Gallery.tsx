@@ -28,15 +28,15 @@ const Gallery = ({ topImgOne, topImgTwo, bottomImg, pageName }: GalleryProps) =>
       style={isPageName(pageName) ? pageStyles[pageName] : pageStyles.default}>
       <div className={styles.top_section}>
         <div className={styles.img_container}>
-          <img src={topImgOne} alt="image" />
+          <img src={topImgOne} alt="image" loading="lazy" />
         </div>
         <div className={styles.img_container}>
-          <img src={topImgTwo} alt="image" />
+          <img src={topImgTwo} alt="image" loading="lazy" />
         </div>
       </div>
 
       <div className={styles.bottom_section}>
-        <img src={bottomImg} alt="image" />
+        <img src={bottomImg} alt="image" loading="lazy" />
       </div>
     </div>
   );
