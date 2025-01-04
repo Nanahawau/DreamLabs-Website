@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo_container}>
-        <img src="./images/3.png" alt="dreamlabs_logo" className={styles.logo} />
+        <Link to="/">
+          <img src="./images/3.png" alt="dreamlabs_logo" className={styles.logo} />
+        </Link>
       </div>
 
       <ul className={styles.navlist}>

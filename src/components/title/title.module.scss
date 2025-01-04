@@ -4,11 +4,22 @@
   margin-top: 109px;
   // color: #ffffff;
 
+  @media (max-width: 860px) {
+    margin-top: 40px;
+     padding-left: 15px;
+  padding-right: 15px;
+  }
+
   .title {
     font-weight: 510;
     line-height: 5.375rem;
     font-size: 4rem;
     color: #efcdff;
+
+    @media (max-width: 860px) {
+      font-size: 18px;
+      line-height: 2.3rem;
+    }
   }
 
   .sub_title {
@@ -16,5 +27,10 @@
     font-weight: 510;
     line-height: 1.34rem;
     color: #aaa8a8;
+
+    @media (max-width: 860px) {
+      font-size: 12px;
+      line-height: 0.72rem;
+    }
   }
 }

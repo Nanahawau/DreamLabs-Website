@@ -4,9 +4,18 @@
   padding-right: 41px;
   border-radius: 40px;
 
+  @media (max-width: 860px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .img_container {
     max-width: 100%;
     border-radius: 40px;
+
+    @media (max-width: 860px) {
+      border-radius: 80px;
+    }
     img {
       width: 100%;
       height: auto;
@@ -25,6 +34,10 @@
     border-bottom-right-radius: 40px;
 
     @media (max-width: 780px) {
+      padding-top: 20px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-bottom: 20px;
     }
 
     .text_content {
@@ -46,12 +59,22 @@
         font-size: 60px;
         font-weight: 400;
         line-height: 71.4px;
-        font-weight: 400;
+
+        @media (max-width: 860px) {
+          font-size: 18px;
+          line-height: 20px;
+        }
       }
       .sub {
         max-width: 449px;
         font-size: 22px;
         line-height: 29.48px;
+
+        @media (max-width: 860px) {
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+        }
       }
     }
 
