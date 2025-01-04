@@ -12,6 +12,13 @@
   margin-bottom: 365px;
   margin-left: 41px;
   margin-right: 41px;
+
+  @media (max-width: 860px) {
+    margin-top: 110px;
+    margin-bottom: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   .dot {
     border: 1px solid #efcdff;
     display: inline-block;

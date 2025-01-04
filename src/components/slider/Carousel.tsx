@@ -39,11 +39,11 @@ const Carousel = () => {
   };
 
   const carouselItems = [
-    { id: 'hertitude', image: '/images/hertitude.svg' },
-    { id: 'alo', image: '/images/celeste.svg' },
-    { id: 'mavin', image: '/images/mavin.svg' },
-    { id: 'chez-ro', image: '/images/chefroz.svg' },
-    { id: 'evos', image: '/images/evoz.svg' }
+    { id: 'hertitude', image: '/images/hertitude_slider.webp' },
+    { id: 'alo', image: '/images/alo_slider.webp' },
+    { id: 'mavin', image: '/images/mavin_slider.webp' },
+    { id: 'chez-ro', image: '/images/chezro_slider.webp' },
+    { id: 'evos', image: '/images/evos_slider.webp' }
   ];
 
   const navigate = useNavigate();

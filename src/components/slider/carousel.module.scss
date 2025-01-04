@@ -1,37 +1,29 @@
 .carousel_container {
-  //   width: 80%;
-  // margin: 100px 0px 220px;
-  // padding-left: 41px;
-  // padding-right: 41px;
   margin-left: 41px;
   margin-right: 41px;
   margin-top: 100px;
   margin-bottom: 220px;
-  // border: 1px solid red;
-  // width: 80%;
+  max-width: 450px;
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
+
+  @media(max-width :860px) {
+    //  margin-left: 15px;
+  // margin-right: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 150px;
+  width: 100%;
+  gap: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
-
-// .carousel_item {
-//   // display: flex;
-//   // gap: 62px;
-//   // transition: transform 0.5s ease;
-//   // box-shadow 0.5s ease;
-//   // transform-origin: center;
-//   z-index: 10;
-// }
-// .carousel_item:hover {
-//   // transform: scale(1.5);
-//   z-index: 20;
-// }
-
-// .carousel_item img {
-//   width: 100%;
-//   border-radius: 8px;
-// }
 
 .carousel_item {
   transition: transform 0.3s ease;
@@ -40,7 +32,6 @@
 }
 
 .carousel_item:hover {
-  transform: scale(1.4);
-  // height: ;
+  // transform: scale(1.4);
   // margin: 40px;
 }

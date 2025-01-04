@@ -16,8 +16,8 @@ const Mavin = () => {
         heroImg="/images/mavin-hero.svg"
         mainText="MAVIN’s 10 year anniversary"
         subText="The result of a close collaboration between the ambitious people at Mavin and the Dream Labs team, Mavin’s 10th year official logo is self-assured. It hasn’t been easy after all, though we’ve made it seem so."
-        imgOne="/images/mavin_cup.svg"
-        imgTwo="/images/mavin_at_10.svg"
+        imgOne="/images/mavincuptb.svg"
+        imgTwo="/images/mavintbimg.svg"
         pageName="mavin"
       />
       <Mission text="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed" />

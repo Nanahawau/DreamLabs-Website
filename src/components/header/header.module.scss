@@ -5,6 +5,11 @@
   padding-right: 41px;
   padding-top: 21px;
 
+  @media (max-width: 860px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .logo_container {
     max-width: 96px;
 
