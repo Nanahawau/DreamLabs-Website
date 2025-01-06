@@ -26,11 +26,20 @@
     align-items: center;
     cursor: pointer;
 
+    @media (max-width: 860px) {
+      gap: 17.5px;
+    }
+
     li {
       list-style: none;
       color: #ffffff;
       line-height: 0.8325rem;
       font-size: 0.75rem;
+
+      @media (max-width: 860px) {
+        font-size: 0.5rem;
+        line-height: 0.4325rem;
+      }
     }
   }
 }

@@ -9,4 +9,12 @@
   padding-right: 41px;
   padding-top: 81px;
   padding-bottom: 41px;
+
+  @media (max-width: 860px) {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 0.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
