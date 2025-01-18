@@ -1,70 +1,113 @@
-import React from 'react';
-import Slider from 'react-slick';
-import styles from './carousel.module.scss';
+import React, { useEffect, useState } from 'react';
+import { styled, keyframes, css } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
-const Carousel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+const slideAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+`;
 
-  const carouselItems = [
-    { id: 'hertitude', image: '/images/hertitude_slider.webp' },
-    { id: 'alo', image: '/images/alo_slider.webp' },
-    { id: 'mavin', image: '/images/mavin_slider.webp' },
-    { id: 'chez-ro', image: '/images/chezro_slider.webp' },
-    { id: 'evos', image: '/images/evos_slider.webp' }
-  ];
+const Container = styled.div`
+  width: 100%;
+  // height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+  margin-bottom: 200px;
+  & .image-list:hover {
+    animation-play-state: paused;
+  }
+`;
+
+const ImageList = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: ${slideAnimation} 20s linear infinite;
+  animation-delay: 2s;
+  width: fit-content;
+`;
+
+const ImageWrapper = styled.div<{ isHovered: boolean }>`
+  flex: 0 0 auto;
+  width: 500px;
+  // height: 600px;
+  height: auto;
+  transition: all 0.3s ease;
+  transform-origin: center left;
+  ${({ isHovered }) =>
+    isHovered &&
+    css`
+      width: 600px;
+      // height: 695px;
+      height: auto;
+    `}
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const SlidingImageGallery: React.FC = () => {
+  const [images, setImages] = useState<{ id: string; image: string }[]>([]);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    const imageUrls = [
+      { id: 'hertitude', image: '/images/hertitude_slider.webp' },
+      { id: 'alo', image: '/images/alo_slider.webp' },
+      { id: 'mavin', image: '/images/mavin_slider.webp' },
+      { id: 'chez-ro', image: '/images/chezro_slider.webp' },
+      { id: 'evos', image: '/images/evos_slider.webp' }
+    ];
+    setImages(imageUrls);
+  }, []);
 
   const navigate = useNavigate();
 
-  const handleItemClick = (id: string) => {
+  const handleImageClick = (id: string) => {
     navigate(`/${id}`);
   };
+
   return (
-    <div>
-      <Slider {...settings}>
-        {carouselItems.map((item, index) => (
-          <div
-            key={item.id}
-            className={styles.carousel_container}
-            onClick={() => handleItemClick(item.id)}>
-            <img src={item.image} alt={`Slide ${index + 1}`} className={styles.carousel_item} />
-          </div>
+    <Container>
+      <ImageList className="image-list">
+        {images.map((src, index) => (
+          <ImageWrapper
+            key={src.id}
+            isHovered={hoveredIndex === index}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}>
+            <Image
+              src={src.image || '/placeholder.svg'}
+              alt={`Sliding image ${index + 1}`}
+              onClick={() => handleImageClick(src.id)}
+            />
+          </ImageWrapper>
         ))}
-      </Slider>
-    </div>
+        {images.map((src, index) => (
+          <ImageWrapper
+            key={`duplicate-${src.id}`}
+            isHovered={hoveredIndex === index + images.length}
+            onMouseEnter={() => setHoveredIndex(index + images.length)}
+            onMouseLeave={() => setHoveredIndex(null)}>
+            <Image
+              src={src.image || '/placeholder.svg'}
+              alt={`Sliding image duplicate ${index + 1}`}
+              onClick={() => handleImageClick(src.id)}
+            />
+          </ImageWrapper>
+        ))}
+      </ImageList>
+    </Container>
   );
 };
 
-export default Carousel;
+export default SlidingImageGallery;

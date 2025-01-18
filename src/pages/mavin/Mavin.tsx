@@ -13,7 +13,7 @@ const Mavin = () => {
       <Header />
       <Title title="MAVIN @ 10" subtitle="BRAND IDENTITY (DIGITAL MEDIA, PRINT)" />
       <TopBanner
-        heroImg="/images/mavin-hero.svg"
+        heroImg="/images/MAVIN-2.webp"
         mainText="MAVIN’s 10 year anniversary"
         subText="The result of a close collaboration between the ambitious people at Mavin and the Dream Labs team, Mavin’s 10th year official logo is self-assured. It hasn’t been easy after all, though we’ve made it seem so."
         imgOne="/images/mavincuptb.svg"

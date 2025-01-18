@@ -15,7 +15,7 @@ const ChezRo = () => {
       <Header />
       <Title title="Chez Ro" subtitle="BRAND IDENTITY (DIGITAL MEDIA, PRINT)" />
       <TopBanner
-        heroImg="/images/chezro_hero.svg"
+        heroImg="/images/chezro.webp"
         mainText="For hot babes, by hot babes"
         subText="We’re an independent group of designers, ​builders, writers, and entrepreneurs obsessed with ​launching and growing brands. We work hard to ​toe a fine line between technology and art, ​pushing businesses into their best selves.  Our ​work covers branding, content strategy, and ​software development."
         imgOne="/images/chezro_brown_box.svg"

@@ -95,10 +95,11 @@
 
       .img_container {
         width: 780px;
-        height: 790.9px;
+        // height: 790.9px;
+        height: auto;
 
         @media (max-width: 860px) {
-          height: 250px;
+          height: auto;
         }
 
         img {

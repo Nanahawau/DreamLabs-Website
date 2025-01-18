@@ -14,7 +14,7 @@ const Hertitude = () => {
       <Header />
       <Title title="Hertitude 2024" subtitle="BRAND IDENTITY (DIGITAL MEDIA, PRINT)" />
       <TopBanner
-        heroImg="/images/for_hot_babes.svg"
+        heroImg="/images/For-hot-babes-only.webp"
         mainText="For hot babes, by hot babes"
         subText="The team designed an identity that calls back to the energies of a good day: hopeful sunrise, electric noon and a romantic evening. Making sure not to miss out on pop culture references, the illustration style stood out amongst a sea of the expected."
         imgOne="/images/hertitude_logo.svg"
