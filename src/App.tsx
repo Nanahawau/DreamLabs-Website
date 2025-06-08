@@ -7,6 +7,7 @@ import Mavin from './pages/mavin/Mavin';
 import Evos from './pages/evos/Evos';
 import Alo from './pages/alo/Alo';
 import ChezRo from './pages/chez-ro/ChezRo';
+import About from './pages/about/About';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/chez-ro" element={<ChezRo />} />
         <Route path="/evos" element={<Evos />} />
         <Route path="/alo" element={<Alo />} />
+        <Route path="/about" element={<About />} />
 
         <Route path="/page/:id" element={<Layout />} />
       </Routes>
