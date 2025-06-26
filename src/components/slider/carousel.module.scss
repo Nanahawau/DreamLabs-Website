@@ -23,7 +23,8 @@
 .carousel_item {
   transition: transform 0.3s ease;
   display: inline-block;
-   width: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .carousel_item:hover {
