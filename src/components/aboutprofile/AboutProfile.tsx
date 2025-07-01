@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import styles from './AboutProfile.module.scss';
 
+type ProfileKey = 'busayo' | 'celeste' | 'ifoghale' | 'nana';
+
+type ImageData = {
+  img: string;
+  caption: string;
+};
 const profiles = [
   {
     id: 'busayo',
@@ -20,7 +26,7 @@ const profiles = [
   }
 ];
 
-const images: any = {
+const images: Record<ProfileKey, ImageData>  = {
   busayo: {
     img: '/images/busayo.jpg',
     caption: 'Head of Product'
