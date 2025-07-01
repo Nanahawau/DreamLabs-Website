@@ -1,3 +1,40 @@
 .container {
   margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+
+  .profile_name {
+    font-weight: 270;
+    font-size: 50px;
+    line-height: 119%;
+    color: #3f3d3d;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .active {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .logo_container {
+    max-width: 721px;
+
+    .logo {
+      width: 721px;
+      height: 476px;
+      object-fit: cover;
+      border-radius: 36.71px;
+    }
+  }
+
+  .img_caption {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 134%;
+    color: #ffffff;
+    margin-top: 20px;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -22,11 +22,11 @@ const Header = () => {
           {/*    WORK*/}
           {/*  </NavLink>*/}
           {/*</li>*/}
-          {/*<li className={styles.navitem}>*/}
-          {/*  <NavLink to="/about" className={styles.navitem}>*/}
-          {/*    ABOUT*/}
-          {/*  </NavLink>*/}
-          {/*</li>*/}
+          <li className={styles.navitem}>
+            <NavLink to="/about" className={styles.navitem}>
+              ABOUT
+            </NavLink>
+          </li>
           {/*<li className={styles.navitem}>*/}
           {/*  <NavLink to="/contact" className={styles.navitem}>*/}
           {/*    CONTACT*/}
