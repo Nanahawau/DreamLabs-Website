@@ -26,7 +26,7 @@ const profiles = [
   }
 ];
 
-const images: Record<ProfileKey, ImageData>  = {
+const images: Record<ProfileKey, ImageData> = {
   busayo: {
     img: '/images/busayo.jpg',
     caption: 'Head of Product'
@@ -45,7 +45,7 @@ const images: Record<ProfileKey, ImageData>  = {
   }
 };
 const AboutProfile = () => {
-  const [selectedId, setSelectedId] = useState(profiles[0]?.id || null);
+  const [selectedId, setSelectedId] = useState<ProfileKey>('busayo');
 
   return (
     <div className={styles.container}>
@@ -54,7 +54,7 @@ const AboutProfile = () => {
           <div
             key={profile.id}
             className={styles.profile}
-            onClick={() => setSelectedId(profile.id)}>
+            onClick={() => setSelectedId(profile.id as ProfileKey)}>
             <li
               className={
                 selectedId === profile.id
